@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-Light.ttf');
+  font-weight: 300;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PermanentMarker';
+  src: url('assets/fonts/PermanentMarker-Regular.tff');
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --flower: #fff;
+  --flower-overlay50: #fff;
+  --bg-gradient-bottom: #fb6f6f;
+  --bg-gradient-top: #a465f4;
+  --bg-gradient: linear-gradient(23deg, fb6f6f 32.12%, a465f4 87.87%);
+  --color-primary: #f9f2ff;
+  --color-secondary: #f29a9a;
+  --color-action: #8312a5;
+  --color-day-highlight: #ffda7a;
+  --color-division-line: #ce8dcc;
+  --font-family-primary: 'Lato', sans-serif;
+  --font-family-secondary: 'Permanent Marker', cursive;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+}
+
+body {
+  margin: 0;
 }
