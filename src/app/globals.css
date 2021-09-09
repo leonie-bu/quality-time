@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'PermanentMarker';
+  font-family: 'Permanent Marker';
   src: url('assets/fonts/PermanentMarker-Regular.tff');
   font-weight: 400;
 }
@@ -30,6 +30,7 @@
   --bg-gradient: linear-gradient(23deg, fb6f6f 32.12%, a465f4 87.87%);
   --color-primary: #f9f2ff;
   --color-secondary: #f29a9a;
+  --color-tertiary: #9a6691;
   --color-action: #8312a5;
   --color-day-highlight: #ffda7a;
   --color-division-line: #ce8dcc;
