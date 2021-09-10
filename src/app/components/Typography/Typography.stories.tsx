@@ -14,21 +14,19 @@ export const L = (): JSX.Element => (
 
 export const M = (): JSX.Element => <Typography size="m">Datum</Typography>;
 
-export const SDarkColor = (): JSX.Element => (
-  <Typography size="sdarkcolor">Zahlen im Kalender</Typography>
+export const SDark = (): JSX.Element => (
+  <Typography size="sdark">Zahlen im Kalender</Typography>
 );
 
-export const SLightColor = (): JSX.Element => (
-  <Typography size="slightcolor">Schrift im Button</Typography>
+export const SMedium = (): JSX.Element => (
+  <Typography size="smedium">Schrift im Eingabefeld</Typography>
 );
 
-export const XSRegWeight = (): JSX.Element => (
-  <Typography size="xsregweight">Schrift im Eingabefeld</Typography>
+export const SLight = (): JSX.Element => (
+  <Typography size="slight">Schrift im Button</Typography>
 );
 
-export const XSLightWeight = (): JSX.Element => (
-  <Typography size="xslightweight">Mo-So</Typography>
-);
+export const XS = (): JSX.Element => <Typography size="xs">Mo-So</Typography>;
 
 export const MM = (): JSX.Element => (
   <Typography size="mm">Aktivität</Typography>
