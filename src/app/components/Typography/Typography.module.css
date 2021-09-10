@@ -1,55 +1,59 @@
-.xl {
+.familyPrimary {
   font-family: var(--font-family-primary);
+}
+
+.familySecondary {
+  font-family: var(--font-family-secondary);
+}
+
+.weightReg {
   font-weight: var(--font-weight-regular);
+}
+
+.weightLight {
+  font-weight: var(--font-weight-light);
+}
+
+.colorPrimary {
   color: var(--color-primary);
+}
+
+.colorWhite {
+  color: var(--flower);
+}
+
+.colorSecondary {
+  color: var(--color-secondary);
+}
+
+.colorAction {
+  color: var(--color-action);
+}
+
+.colorTertiary {
+  color: var(--color-tertiary);
+}
+
+.xl {
   font-size: 2.5rem;
 }
 
 .l {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-regular);
-  color: var(--flower);
   font-size: 2rem;
 }
 
 .m {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-secondary);
   font-size: 1.3rem;
 }
 
-.sdarkcolor {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-action);
+.s {
   font-size: 1.1rem;
 }
 
-.slightcolor {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-primary);
-  font-size: 1.1rem;
-}
-
-.xsregweight {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-tertiary);
-  font-size: 0.9rem;
-}
-
-.xslightweight {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-light);
-  color: var(--color-action);
+.xs {
   font-size: 0.9rem;
 }
 
 .mm {
-  font-family: var(--font-family-secondary);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-secondary);
   font-size: 1.5rem;
 }
