@@ -1,0 +1,59 @@
+.familyPrimary {
+  font-family: var(--font-family-primary);
+}
+
+.familySecondary {
+  font-family: var(--font-family-secondary);
+}
+
+.weightReg {
+  font-weight: var(--font-weight-regular);
+}
+
+.weightLight {
+  font-weight: var(--font-weight-light);
+}
+
+.colorPrimary {
+  color: var(--color-primary);
+}
+
+.colorWhite {
+  color: var(--flower);
+}
+
+.colorSecondary {
+  color: var(--color-secondary);
+}
+
+.colorAction {
+  color: var(--color-action);
+}
+
+.colorTertiary {
+  color: var(--color-tertiary);
+}
+
+.xl {
+  font-size: 2.5rem;
+}
+
+.l {
+  font-size: 2rem;
+}
+
+.m {
+  font-size: 1.3rem;
+}
+
+.s {
+  font-size: 1.1rem;
+}
+
+.xs {
+  font-size: 0.9rem;
+}
+
+.mm {
+  font-size: 1.5rem;
+}
