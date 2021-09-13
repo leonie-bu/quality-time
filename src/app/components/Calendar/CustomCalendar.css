@@ -1,0 +1,71 @@
+.react-calendar__month-view__days__day--weekend {
+  color: goldenrod;
+}
+
+/* Month */
+.react-calendar__navigation__label__labelText--from {
+  color: #f9f2ff;
+  font-size: 2.5rem;
+}
+
+/* Arrow to next month */
+.react-calendar__navigation__next-button {
+  color: #8312a5;
+  font-size: 2.5rem;
+}
+
+/* Arrow to previous month */
+.react-calendar__navigation__prev-button {
+  color: #8312a5;
+  font-size: 2.5rem;
+}
+
+/* Remove arrow to same month, next year */
+.react-calendar__navigation__next2-button {
+  color: transparent;
+  padding: 0;
+}
+
+/* Remove arrow to same month, previous year */
+.react-calendar__navigation__prev2-button {
+  display: hidden;
+  padding: 0;
+}
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 0.75em;
+  color: #8312a5;
+  text-decoration: none;
+}
+.react-calendar__month-view__weekNumbers {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.react-calendar__month-view__days__day {
+  color: #8312a5;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #9a6691;
+}
+.react-calendar__tile--now {
+  background: #ffda7a;
+  border-radius: 50%;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  border-radius: 50%;
+}
+.react-calendar__tile--active {
+  background: #ffda7a;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #1087ff;
+}
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
