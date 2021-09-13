@@ -18,7 +18,7 @@ export default function ReactCalendar(): JSX.Element {
 
   return (
     <div>
-      <Calendar onChange={onChange} value={value} />
+      <Calendar onChange={onChange} value={value} className={styles.cal} />
     </div>
   );
 }
