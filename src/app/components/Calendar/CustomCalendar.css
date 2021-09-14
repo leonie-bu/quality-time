@@ -1,7 +1,21 @@
+.react-calendar {
+  width: 320px;
+  max-width: 100%;
+  background: white;
+  border: none;
+}
+
+/* Adapt Nav Bar // Is there a way to overwrite the inline style of the navigation that sets display=flex to grid, other that using !important? */
+.react-calendar__navigation {
+  display: grid !important;
+  grid-template-columns: 1% 9% 80% 9% 1%;
+  justify-items: center;
+}
+
 /* Month */
 .react-calendar__navigation__label__labelText--from {
   color: #f9f2ff;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 /* Arrow to next month */
@@ -31,11 +45,15 @@
 /* Mo-So */
 .react-calendar__month-view__weekdays {
   font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-light);
+  font-weight: 300;
   color: #8312a5;
   font-size: 0.9rem;
   text-align: center;
   text-transform: none;
+}
+
+/* einzelner Tag // How to remove dotted underline below Mo, Di Mi, Do, Fr, Sa, So? Text-decoration: none does not seem to work. */
+.react-calendar__month-view__weekdays__weekday {
   text-decoration: none;
 }
 
@@ -63,28 +81,22 @@
   border-radius: 50%;
 }
 
-.react-calendar__tile--now:enabled:focus {
+/* beim anklicken */
+.react-calendar__tile--now:enabled:focus,
+.react-calendar__tile--now:enabled:hover {
   background: #ffda7a;
   border-radius: 50%;
 }
 
 /* Tile active: die Kachel, die angeklickt wird */
 .react-calendar__tile--active {
-  background: #ffda7a;
+  background: #f9f2ff;
   border-radius: 50%;
 }
 
-.react-calendar__tile--active:enabled:focus {
-  background: transparent;
+/* beim anklicken */
+.react-calendar__tile--active:enabled:focus,
+.react-calendar__tile--active:enabled:hover {
+  background: #f9f2ff;
   border-radius: 50%;
-  border: solid 0.1rem #ffda7a;
 }
-
-/*
-.react-calendar--selectRange , .react-calendar__tile--now:enabled:focus
-.react-calendar__tile--now:enabled:hover,
-.react-calendar__tile--active:enabled:hover,
-.react-calendar__tile:enabled:hover {
-  border: solid #ffda7a 0.1rem;
-}
-*/
