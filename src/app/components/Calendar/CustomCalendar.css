@@ -100,3 +100,27 @@
   background: #f9f2ff;
   border-radius: 50%;
 }
+
+/* Jahresübersicht mit Monaten */
+.react-calendar__year-view__months__month {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: #8312a5;
+  font-size: 0.8rem;
+}
+
+/* Dekadenübersicht mit Jahren */
+.react-calendar__decade-view__years__year {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: #8312a5;
+  font-size: 0.8rem;
+}
+
+/* Jahrhundertübersicht mit Dekaden */
+.react-calendar__century-view__decades__decade {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: #8312a5;
+  font-size: 0.8rem;
+}
