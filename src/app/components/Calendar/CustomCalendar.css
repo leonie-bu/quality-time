@@ -1,7 +1,3 @@
-.react-calendar__month-view__days__day--weekend {
-  color: goldenrod;
-}
-
 /* Month */
 .react-calendar__navigation__label__labelText--from {
   color: #f9f2ff;
@@ -28,44 +24,67 @@
 
 /* Remove arrow to same month, previous year */
 .react-calendar__navigation__prev2-button {
-  display: hidden;
+  color: transparent;
   padding: 0;
 }
+
+/* Mo-So */
 .react-calendar__month-view__weekdays {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-light);
+  color: #8312a5;
+  font-size: 0.9rem;
   text-align: center;
   text-transform: none;
-  font-weight: 300;
-  font-size: 0.75em;
-  color: #8312a5;
   text-decoration: none;
 }
-.react-calendar__month-view__weekNumbers {
-  font-weight: 400;
+
+/* Zahlen im Kalender, des jeweiligen Monats */
+.react-calendar__month-view__days__day {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: #8312a5;
   font-size: 1.1rem;
 }
-.react-calendar__month-view__days__day {
-  color: #8312a5;
-}
+
+/* Zahlen im Kalender, des vorherigen und nächsten Monats */
 .react-calendar__month-view__days__day--neighboringMonth {
   color: #9a6691;
 }
+
+/* Einzelne Kachel, wo die Zahlen drin sind */
+.react-calendar__tile {
+  padding: 0.75rem;
+}
+
+/* Tile now: heutige Kachel, wenn nicht angeklickt */
 .react-calendar__tile--now {
   background: #ffda7a;
   border-radius: 50%;
 }
-.react-calendar__tile--now:enabled:hover,
+
 .react-calendar__tile--now:enabled:focus {
+  background: #ffda7a;
   border-radius: 50%;
 }
+
+/* Tile active: die Kachel, die angeklickt wird */
 .react-calendar__tile--active {
   background: #ffda7a;
   border-radius: 50%;
 }
 
-.react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
-  background: #1087ff;
+  background: transparent;
+  border-radius: 50%;
+  border: solid 0.1rem #ffda7a;
 }
-.react-calendar--selectRange .react-calendar__tile--hover {
-  background-color: #e6e6e6;
+
+/*
+.react-calendar--selectRange , .react-calendar__tile--now:enabled:focus
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile:enabled:hover {
+  border: solid #ffda7a 0.1rem;
 }
+*/
