@@ -10,6 +10,7 @@ export default function PlusBackgroundIcon(
       height="60"
       viewBox="0 0 60 60"
       fill="none"
+      {...props}
     >
       <circle cx="30" cy="30" r="30" fill="#8312A5" />
       <path
