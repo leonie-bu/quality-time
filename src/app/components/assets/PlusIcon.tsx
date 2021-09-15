@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function PlusIcon2(
+export default function PlusIcon(
   props: React.SVGProps<SVGSVGElement>
 ): JSX.Element {
   return (
