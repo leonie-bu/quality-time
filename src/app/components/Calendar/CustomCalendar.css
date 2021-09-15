@@ -1,7 +1,6 @@
 .react-calendar {
-  width: 320px;
+  width: 310px;
   max-width: 100%;
-  background: white;
   border: none;
 }
 
@@ -14,20 +13,20 @@
 
 /* Month */
 .react-calendar__navigation__label__labelText--from {
-  color: #f9f2ff;
-  font-size: 2rem;
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
 }
 
 /* Arrow to next month */
 .react-calendar__navigation__next-button {
-  color: #8312a5;
-  font-size: 2.5rem;
+  color: var(--color-action);
+  font-size: var(--font-size-xl);
 }
 
 /* Arrow to previous month */
 .react-calendar__navigation__prev-button {
-  color: #8312a5;
-  font-size: 2.5rem;
+  color: var(--color-action);
+  font-size: var(--font-size-xl);
 }
 
 /* Remove arrow to same month, next year */
@@ -45,15 +44,14 @@
 /* Mo-So */
 .react-calendar__month-view__weekdays {
   font-family: var(--font-family-primary);
-  font-weight: 300;
-  color: #8312a5;
-  font-size: 0.9rem;
-  text-align: center;
+  font-weight: var(--font-weight-light);
+  color: var(--color-action);
+  font-size: var(--font-size-xs);
   text-transform: none;
 }
 
-/* einzelner Tag // How to remove dotted underline below Mo, Di Mi, Do, Fr, Sa, So? Text-decoration: none does not seem to work. */
-.react-calendar__month-view__weekdays__weekday {
+/* Punkte unter Mo, Di, Mi, etc entfernen mit dem abbr tag */
+abbr {
   text-decoration: none;
 }
 
@@ -61,13 +59,13 @@
 .react-calendar__month-view__days__day {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-regular);
-  color: #8312a5;
-  font-size: 1.1rem;
+  color: var(--color-action);
+  font-size: var(--font-size-s);
 }
 
 /* Zahlen im Kalender, des vorherigen und nächsten Monats */
 .react-calendar__month-view__days__day--neighboringMonth {
-  color: #9a6691;
+  color: var(--color-tertiary);
 }
 
 /* Einzelne Kachel, wo die Zahlen drin sind */
@@ -77,27 +75,27 @@
 
 /* Tile now: heutige Kachel, wenn nicht angeklickt */
 .react-calendar__tile--now {
-  background: #ffda7a;
+  background: var(--color-day-highlight);
   border-radius: 50%;
 }
 
 /* beim anklicken */
 .react-calendar__tile--now:enabled:focus,
 .react-calendar__tile--now:enabled:hover {
-  background: #ffda7a;
+  background: var(--color-day-highlight);
   border-radius: 50%;
 }
 
 /* Tile active: die Kachel, die angeklickt wird */
 .react-calendar__tile--active {
-  background: #f9f2ff;
+  background: var(--color-primary);
   border-radius: 50%;
 }
 
 /* beim anklicken */
 .react-calendar__tile--active:enabled:focus,
 .react-calendar__tile--active:enabled:hover {
-  background: #f9f2ff;
+  background: var(--color-primary);
   border-radius: 50%;
 }
 
@@ -105,22 +103,22 @@
 .react-calendar__year-view__months__month {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-regular);
-  color: #8312a5;
-  font-size: 0.8rem;
+  color: var(--color-action);
+  font-size: var(--font-size-xs);
 }
 
 /* Dekadenübersicht mit Jahren */
 .react-calendar__decade-view__years__year {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-regular);
-  color: #8312a5;
-  font-size: 0.8rem;
+  color: var(--color-action);
+  font-size: var(--font-size-xs);
 }
 
 /* Jahrhundertübersicht mit Dekaden */
 .react-calendar__century-view__decades__decade {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-regular);
-  color: #8312a5;
-  font-size: 0.8rem;
+  color: var(--color-action);
+  font-size: var(--font-size-xs);
 }
