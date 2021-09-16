@@ -2,6 +2,7 @@
   width: 310px;
   max-width: 100%;
   border: none;
+  background: var(--bg-gradient);
 }
 
 /* Adapt Nav Bar // Is there a way to overwrite the inline style of the navigation that sets display=flex to grid, other that using !important? */
@@ -79,22 +80,8 @@ abbr {
   border-radius: 50%;
 }
 
-/* beim anklicken */
-.react-calendar__tile--now:enabled:focus,
-.react-calendar__tile--now:enabled:hover {
-  background: var(--color-day-highlight);
-  border-radius: 50%;
-}
-
 /* Tile active: die Kachel, die angeklickt wird */
 .react-calendar__tile--active {
-  background: var(--color-primary);
-  border-radius: 50%;
-}
-
-/* beim anklicken */
-.react-calendar__tile--active:enabled:focus,
-.react-calendar__tile--active:enabled:hover {
   background: var(--color-primary);
   border-radius: 50%;
 }
@@ -121,4 +108,25 @@ abbr {
   font-weight: var(--font-weight-regular);
   color: var(--color-action);
   font-size: var(--font-size-xs);
+}
+
+/* --------------- HOVER EFFECTS --------------- */
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: none;
+}
+
+/* beim anklicken */
+.react-calendar__tile--now:enabled:focus,
+.react-calendar__tile--now:enabled:hover {
+  background: var(--color-day-highlight);
+  border-radius: 50%;
+}
+
+/* beim anklicken */
+.react-calendar__tile--active:enabled:focus,
+.react-calendar__tile--active:enabled:hover {
+  background: var(--color-primary);
+  border-radius: 50%;
 }
