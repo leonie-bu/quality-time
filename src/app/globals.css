@@ -27,7 +27,11 @@
   --flower-overlay50: #fff;
   --bg-gradient-bottom: #fb6f6f;
   --bg-gradient-top: #a465f4;
-  --bg-gradient: linear-gradient(23deg, fb6f6f 32.12%, a465f4 87.87%);
+  --bg-gradient: linear-gradient(
+    191.16deg,
+    rgba(164, 101, 244, 0.7) -41.19%,
+    rgba(251, 111, 111, 0.7) 84.87%
+  );
   --color-primary: #f9f2ff;
   --color-secondary: #f29a9a;
   --color-tertiary: #9a6691;
