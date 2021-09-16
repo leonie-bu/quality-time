@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'Permanentmarker';
+  font-family: 'Permanent Marker';
   src: url('./assets/fonts/PermanentMarker-Regular.tff');
   font-weight: 400;
 }
@@ -35,7 +35,7 @@
   --color-day-highlight: #ffda7a;
   --color-division-line: #ce8dcc;
   --font-family-primary: 'Lato', sans-serif;
-  --font-family-secondary: 'Permanentmarker', cursive;
+  --font-family-secondary: 'Permanent Marker', cursive;
   --font-weight-regular: 400;
   --font-weight-light: 300;
   --font-size-xl: 2.5rem;
