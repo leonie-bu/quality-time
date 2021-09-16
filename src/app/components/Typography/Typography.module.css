@@ -35,25 +35,25 @@
 }
 
 .xl {
-  font-size: 2.5rem;
+  font-size: var(--font-size-xl);
 }
 
 .l {
-  font-size: 2rem;
+  font-size: var(--font-size-l);
 }
 
 .m {
-  font-size: 1.3rem;
+  font-size: var(--font-size-m);
 }
 
 .s {
-  font-size: 1.1rem;
+  font-size: var(--font-size-s);
 }
 
 .xs {
-  font-size: 0.9rem;
+  font-size: var(--font-size-xs);
 }
 
 .mm {
-  font-size: 1.5rem;
+  font-size: var(--font-size-mm);
 }

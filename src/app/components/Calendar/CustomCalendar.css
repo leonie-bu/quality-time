@@ -1,0 +1,124 @@
+.react-calendar {
+  width: 310px;
+  max-width: 100%;
+  border: none;
+}
+
+/* Adapt Nav Bar // Is there a way to overwrite the inline style of the navigation that sets display=flex to grid, other that using !important? */
+.react-calendar__navigation {
+  display: grid !important;
+  grid-template-columns: 1% 9% 80% 9% 1%;
+  justify-items: center;
+}
+
+/* Month */
+.react-calendar__navigation__label__labelText--from {
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
+}
+
+/* Arrow to next month */
+.react-calendar__navigation__next-button {
+  color: var(--color-action);
+  font-size: var(--font-size-xl);
+}
+
+/* Arrow to previous month */
+.react-calendar__navigation__prev-button {
+  color: var(--color-action);
+  font-size: var(--font-size-xl);
+}
+
+/* Remove arrow to same month, next year */
+.react-calendar__navigation__next2-button {
+  color: transparent;
+  padding: 0;
+}
+
+/* Remove arrow to same month, previous year */
+.react-calendar__navigation__prev2-button {
+  color: transparent;
+  padding: 0;
+}
+
+/* Mo-So */
+.react-calendar__month-view__weekdays {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-light);
+  color: var(--color-action);
+  font-size: var(--font-size-xs);
+  text-transform: none;
+}
+
+/* Punkte unter Mo, Di, Mi, etc entfernen mit dem abbr tag */
+abbr {
+  text-decoration: none;
+}
+
+/* Zahlen im Kalender, des jeweiligen Monats */
+.react-calendar__month-view__days__day {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-action);
+  font-size: var(--font-size-s);
+}
+
+/* Zahlen im Kalender, des vorherigen und nächsten Monats */
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: var(--color-tertiary);
+}
+
+/* Einzelne Kachel, wo die Zahlen drin sind */
+.react-calendar__tile {
+  padding: 0.75rem;
+}
+
+/* Tile now: heutige Kachel, wenn nicht angeklickt */
+.react-calendar__tile--now {
+  background: var(--color-day-highlight);
+  border-radius: 50%;
+}
+
+/* beim anklicken */
+.react-calendar__tile--now:enabled:focus,
+.react-calendar__tile--now:enabled:hover {
+  background: var(--color-day-highlight);
+  border-radius: 50%;
+}
+
+/* Tile active: die Kachel, die angeklickt wird */
+.react-calendar__tile--active {
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+/* beim anklicken */
+.react-calendar__tile--active:enabled:focus,
+.react-calendar__tile--active:enabled:hover {
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+/* Jahresübersicht mit Monaten */
+.react-calendar__year-view__months__month {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-action);
+  font-size: var(--font-size-xs);
+}
+
+/* Dekadenübersicht mit Jahren */
+.react-calendar__decade-view__years__year {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-action);
+  font-size: var(--font-size-xs);
+}
+
+/* Jahrhundertübersicht mit Dekaden */
+.react-calendar__century-view__decades__decade {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-action);
+  font-size: var(--font-size-xs);
+}
