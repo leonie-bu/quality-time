@@ -14,18 +14,32 @@ export default {
   component: Icons,
 };
 
-export const Calendar = (): JSX.Element => <CalendarIcon />;
+export const Calendar = (): JSX.Element => (
+  <CalendarIcon onClick={() => console.log('Test')} />
+);
 
-export const Delete = (): JSX.Element => <DeleteIcon />;
+export const Delete = (): JSX.Element => (
+  <DeleteIcon onClick={() => console.log('Test')} />
+);
 
-export const Done = (): JSX.Element => <DoneIcon />;
+export const Done = (): JSX.Element => (
+  <DoneIcon onClick={() => console.log('Test')} />
+);
 
-export const Edit = (): JSX.Element => <EditIcon />;
+export const Edit = (): JSX.Element => (
+  <EditIcon onClick={() => console.log('Test')} />
+);
 
-export const Overview = (): JSX.Element => <OverviewIcon />;
+export const Overview = (): JSX.Element => (
+  <OverviewIcon onClick={() => console.log('Test')} />
+);
 
-export const Plus = (): JSX.Element => <PlusIcon />;
+export const Plus = (): JSX.Element => (
+  <PlusIcon onClick={() => console.log('Test')} />
+);
 
-export const PlusBackground = (): JSX.Element => <PlusBackgroundIcon />;
+export const PlusBackground = (): JSX.Element => (
+  <PlusBackgroundIcon onClick={() => console.log('Test')} />
+);
 
 export const FlowerS = (): JSX.Element => <FlowerIconSmall />;
