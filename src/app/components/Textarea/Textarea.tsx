@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Textarea.module.css';
 
 type TextareaProps = {
@@ -6,6 +6,7 @@ type TextareaProps = {
 };
 
 export default function Textarea({ handleSubmit }: TextareaProps): JSX.Element {
+  const [activity, setActivity] = useState<string>('');
   return (
     <form onSubmit={handleSubmit}>
       <textarea
@@ -15,6 +16,8 @@ export default function Textarea({ handleSubmit }: TextareaProps): JSX.Element {
         placeholder="Mach was Schönes"
         className={styles.textarea}
         maxLength={40}
+        value={activity}
+        onChange={(event) => setActivity(event.target.value)}
       ></textarea>
     </form>
   );
