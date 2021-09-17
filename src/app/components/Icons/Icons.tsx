@@ -36,8 +36,8 @@ const iconSizeMap: {
   flowerSmall: <FlowerIconSmall />,
 };
 
-const Icons = ({ type }: IconProps): JSX.Element => {
-  return <div>{iconSizeMap[type]}</div>;
+const Icons = ({ type, onClick }: IconProps): JSX.Element => {
+  return <div onClick={onClick}>{iconSizeMap[type]}</div>;
 };
 
 export default Icons;
