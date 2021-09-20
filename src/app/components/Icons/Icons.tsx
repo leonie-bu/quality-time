@@ -8,6 +8,7 @@ import PlusIcon from '../assets/PlusIcon';
 import PlusBackgroundIcon from '../assets/PlusBackgroundIcon';
 import FlowerIconSmall from '../assets/FlowerIconSmall';
 import LetsGoIcon from '../assets/LetsGo';
+import DivisionLineIcon from '../assets/DivisionLine';
 
 type IconType =
   | 'calendar'
@@ -18,7 +19,8 @@ type IconType =
   | 'plus'
   | 'plusBackground'
   | 'flowerSmall'
-  | 'letsgo';
+  | 'letsgo'
+  | 'division';
 
 type IconProps = {
   type: IconType;
@@ -37,6 +39,7 @@ const iconSizeMap: {
   plusBackground: <PlusBackgroundIcon />,
   flowerSmall: <FlowerIconSmall />,
   letsgo: <LetsGoIcon />,
+  division: <DivisionLineIcon />,
 };
 
 const Icons = ({ type, onClick }: IconProps): JSX.Element => {
