@@ -18,8 +18,8 @@ export default function DivisionLineIcon(
         y1="1.5107"
         x2="378.5"
         y2="1.50044"
-        fill="var(--color-division-line)"
-        stroke="var(--color-division-line)"
+        fill="inherit"
+        stroke="inherit"
         stroke-width="3"
         stroke-linecap="round"
       />
