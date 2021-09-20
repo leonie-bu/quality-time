@@ -9,6 +9,7 @@ import PlusIcon from '../assets/PlusIcon';
 import FlowerIconSmall from '../assets/FlowerIconSmall';
 import Icons from './Icons';
 import LetsGoIcon from '../assets/LetsGo';
+import DivisionLineIcon from '../assets/DivisionLine';
 
 export default {
   title: 'Component/Icons',
@@ -48,3 +49,5 @@ export const FlowerS = (): JSX.Element => <FlowerIconSmall />;
 export const LetsGo = (): JSX.Element => (
   <LetsGoIcon onClick={() => console.log('Test')} />
 );
+
+export const DivisionLine = (): JSX.Element => <DivisionLineIcon />;
