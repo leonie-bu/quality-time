@@ -1,0 +1,9 @@
+.container {
+  background-color: var(--color-primary);
+  width: 23.75rem;
+}
+
+.donemessage {
+  display: flex;
+  justify-content: center;
+}
