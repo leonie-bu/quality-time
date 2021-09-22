@@ -25,6 +25,7 @@ type IconType =
 type IconProps = {
   type: IconType;
   onClick: () => void;
+  className?: string;
 };
 
 const iconSizeMap: {
