@@ -22,10 +22,14 @@ function ActiveActivity({
   return (
     <section className={styles.container}>
       <Typography size="m">{header}</Typography>
-      <Textarea handleSubmit={handleSubmit}></Textarea>
-      <Icons type="done" onClick={onClickDone}></Icons>
-      <Icons type="edit" onClick={onClickEdit}></Icons>
-      <Icons type="delete" onClick={onClickDelete}></Icons>
+      <div className={styles.textarea}>
+        <Textarea handleSubmit={handleSubmit}></Textarea>
+      </div>
+      <div className={styles.icons}>
+        <Icons type="done" onClick={onClickDone}></Icons>
+        <Icons type="edit" onClick={onClickEdit}></Icons>
+        <Icons type="delete" onClick={onClickDelete}></Icons>
+      </div>
       <Icons type="division"></Icons>
     </section>
   );
