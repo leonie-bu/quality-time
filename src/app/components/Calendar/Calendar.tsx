@@ -18,7 +18,12 @@ export default function ReactCalendar(): JSX.Element {
 
   return (
     <div>
-      <Calendar onChange={onChange} value={value} />
+      <Calendar
+        onChange={onChange}
+        value={value}
+        next2Label={null}
+        prev2Label={null}
+      />
     </div>
   );
 }

@@ -7,7 +7,12 @@ export default function CalendarDate(): JSX.Element {
 
   return (
     <div>
-      <Calendar onClickDay={setDate} value={date} />
+      <Calendar
+        onClickDay={setDate}
+        value={date}
+        next2Label={null}
+        prev2Label={null}
+      />
       <p>
         <Typography size="m"> {date.toDateString()}</Typography>
       </p>
