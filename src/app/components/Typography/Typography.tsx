@@ -5,6 +5,7 @@ import type { ReactNode } from 'react';
 type TypographyProps = {
   size: 'xl' | 'l' | 'm' | 'sdark' | 'smedium' | 'slight' | 'xs' | 'mm';
   children: ReactNode;
+  className?: string;
 };
 
 const sizeMap = {
