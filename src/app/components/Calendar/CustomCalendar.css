@@ -8,7 +8,7 @@
 /* Adapt Nav Bar // Is there a way to overwrite the inline style of the navigation that sets display=flex to grid, other that using !important? */
 .react-calendar__navigation {
   display: grid !important;
-  grid-template-columns: 1% 9% 80% 9% 1%;
+  grid-template-columns: 5% 90% 5%;
   justify-items: center;
 }
 
@@ -28,18 +28,6 @@
 .react-calendar__navigation__prev-button {
   color: var(--color-action);
   font-size: var(--font-size-xl);
-}
-
-/* Remove arrow to same month, next year */
-.react-calendar__navigation__next2-button {
-  color: transparent;
-  padding: 0;
-}
-
-/* Remove arrow to same month, previous year */
-.react-calendar__navigation__prev2-button {
-  color: transparent;
-  padding: 0;
 }
 
 /* Mo-So */
