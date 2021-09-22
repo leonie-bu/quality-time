@@ -1,0 +1,15 @@
+.container {
+  background-color: var(--color-primary);
+  width: 23.75rem;
+}
+
+.textarea {
+  display: grid;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
