@@ -1,7 +1,7 @@
 import React from 'react';
 import Icons from '../Icons/Icons';
 import Typography from '../Typography/Typography';
-import styles from './CardActivity.module.css';
+import styles from './EmptyActivity.module.css';
 
 export type EmptyActivityProps = {
   header: string;

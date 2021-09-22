@@ -1,5 +1,5 @@
 import React from 'react';
-import EmptyActivity from './CardActivity';
+import EmptyActivity from './EmptyActivity';
 
 export default {
   title: 'Component/EmptyActivity',
