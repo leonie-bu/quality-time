@@ -1,0 +1,10 @@
+.container {
+  background-color: var(--color-primary);
+  width: 23.75rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.9rem;
+  align-items: center;
+}
