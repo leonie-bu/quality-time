@@ -24,7 +24,7 @@ type IconType =
 
 type IconProps = {
   type: IconType;
-  onClick: () => void;
+  onClick?: () => void;
   className?: string;
 };
 

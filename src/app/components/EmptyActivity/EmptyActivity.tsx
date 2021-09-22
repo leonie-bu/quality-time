@@ -18,7 +18,7 @@ function EmptyActivity({
         <Typography size="m">{header}</Typography>
         <Icons type="plus" onClick={onClickPlus}></Icons>
       </div>
-      <Icons type="division" onClick={onClickPlus}></Icons>
+      <Icons type="division"></Icons>
     </section>
   );
 }
