@@ -3,6 +3,7 @@ import styles from './Textarea.module.css';
 
 type TextareaProps = {
   handleSubmit: () => void;
+  className?: string;
 };
 
 export default function Textarea({ handleSubmit }: TextareaProps): JSX.Element {
