@@ -30,12 +30,12 @@ type IconProps = {
 };
 
 const Icons = ({ type, onClick, isClickable }: IconProps): JSX.Element => {
-  const active = {
+  const currentPage = {
     fill: 'var(--color-secondary)',
     stroke: 'var(--color-secondary)',
   };
 
-  const inactive = {
+  const otherPage = {
     fill: 'var(--color-action)',
     stroke: 'var(--color-action)',
   };
@@ -43,11 +43,11 @@ const Icons = ({ type, onClick, isClickable }: IconProps): JSX.Element => {
   const iconSizeMap: {
     [type in IconType]: JSX.Element;
   } = {
-    calendar: <CalendarIcon {...(isClickable ? active : inactive)} />,
+    calendar: <CalendarIcon {...(isClickable ? currentPage : otherPage)} />,
     delete: <DeleteIcon />,
     done: <DoneIcon />,
     edit: <EditIcon />,
-    overview: <OverviewIcon {...(isClickable ? active : inactive)} />,
+    overview: <OverviewIcon {...(isClickable ? currentPage : otherPage)} />,
     plus: <PlusIcon />,
     plusBackground: <PlusBackgroundIcon />,
     flowerSmall: <FlowerIconSmall />,

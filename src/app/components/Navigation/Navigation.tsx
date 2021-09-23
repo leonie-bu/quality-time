@@ -10,12 +10,12 @@ export type NavigationProps = {
 };
 
 function Navigation({ activeLink, className }: NavigationProps): JSX.Element {
-  const active = {
+  const currentPage = {
     fill: 'var(--color-secondary)',
     stroke: 'var(--color-secondary)',
   };
 
-  const inactive = {
+  const otherPage = {
     fill: 'var(--color-action)',
     stroke: 'var(--color-action)',
   };
@@ -24,10 +24,14 @@ function Navigation({ activeLink, className }: NavigationProps): JSX.Element {
     <nav className={`${styles.navigation} ${className}`}>
       <BrowserRouter>
         <Link to="/calendar">
-          <CalendarIcon {...(activeLink === 'calendar' ? active : inactive)} />
+          <CalendarIcon
+            {...(activeLink === 'calendar' ? currentPage : otherPage)}
+          />
         </Link>
         <Link to="/overview">
-          <OverviewIcon {...(activeLink === 'overview' ? active : inactive)} />
+          <OverviewIcon
+            {...(activeLink === 'overview' ? currentPage : otherPage)}
+          />
         </Link>
       </BrowserRouter>
     </nav>
