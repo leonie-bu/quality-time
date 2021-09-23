@@ -26,24 +26,34 @@ type IconProps = {
   type: IconType;
   onClick?: () => void;
   className?: string;
+  isClickable: boolean;
 };
 
-const iconSizeMap: {
-  [type in IconType]: JSX.Element;
-} = {
-  calendar: <CalendarIcon />,
-  delete: <DeleteIcon />,
-  done: <DoneIcon />,
-  edit: <EditIcon />,
-  overview: <OverviewIcon />,
-  plus: <PlusIcon />,
-  plusBackground: <PlusBackgroundIcon />,
-  flowerSmall: <FlowerIconSmall />,
-  letsgo: <LetsGoIcon />,
-  division: <DivisionLineIcon />,
-};
+const Icons = ({ type, onClick, isClickable }: IconProps): JSX.Element => {
+  const active = {
+    fill: 'var(--color-secondary)',
+    stroke: 'var(--color-secondary)',
+  };
 
-const Icons = ({ type, onClick }: IconProps): JSX.Element => {
+  const inactive = {
+    fill: 'var(--color-action)',
+    stroke: 'var(--color-action)',
+  };
+
+  const iconSizeMap: {
+    [type in IconType]: JSX.Element;
+  } = {
+    calendar: <CalendarIcon {...(isClickable ? active : inactive)} />,
+    delete: <DeleteIcon />,
+    done: <DoneIcon />,
+    edit: <EditIcon />,
+    overview: <OverviewIcon {...(isClickable ? active : inactive)} />,
+    plus: <PlusIcon />,
+    plusBackground: <PlusBackgroundIcon />,
+    flowerSmall: <FlowerIconSmall />,
+    letsgo: <LetsGoIcon />,
+    division: <DivisionLineIcon />,
+  };
   return <div onClick={onClick}>{iconSizeMap[type]}</div>;
 };
 
