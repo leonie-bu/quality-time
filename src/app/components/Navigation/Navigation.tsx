@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Navigation.module.css';
 import CalendarIcon from '../assets/CalendarIcon';
 import OverviewIcon from '../assets/OverviewIcon';
+import { Link } from 'react-router-dom';
 
 export type NavigationProps = {
   activeLink: 'calendar' | 'overview';
@@ -21,16 +22,16 @@ function Navigation({ activeLink, className }: NavigationProps): JSX.Element {
 
   return (
     <nav className={`${styles.navigation} ${className}`}>
-      <a href="#">
+      <Link to="">
         <CalendarIcon
           {...(activeLink === 'calendar' ? currentPage : otherPage)}
         />
-      </a>
-      <a href="#">
+      </Link>
+      <Link to="">
         <OverviewIcon
           {...(activeLink === 'overview' ? currentPage : otherPage)}
         />
-      </a>
+      </Link>
     </nav>
   );
 }
