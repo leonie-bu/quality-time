@@ -43,18 +43,28 @@ const Icons = ({ type, onClick, isClickable }: IconProps): JSX.Element => {
   const iconSizeMap: {
     [type in IconType]: JSX.Element;
   } = {
-    calendar: <CalendarIcon {...(isClickable ? currentPage : otherPage)} />,
-    delete: <DeleteIcon />,
-    done: <DoneIcon />,
-    edit: <EditIcon />,
-    overview: <OverviewIcon {...(isClickable ? currentPage : otherPage)} />,
-    plus: <PlusIcon />,
-    plusBackground: <PlusBackgroundIcon />,
-    flowerSmall: <FlowerIconSmall />,
-    letsgo: <LetsGoIcon />,
-    division: <DivisionLineIcon />,
+    calendar: (
+      <CalendarIcon
+        onClick={onClick}
+        {...(isClickable ? currentPage : otherPage)}
+      />
+    ),
+    delete: <DeleteIcon onClick={onClick} />,
+    done: <DoneIcon onClick={onClick} />,
+    edit: <EditIcon onClick={onClick} />,
+    overview: (
+      <OverviewIcon
+        onClick={onClick}
+        {...(isClickable ? currentPage : otherPage)}
+      />
+    ),
+    plus: <PlusIcon onClick={onClick} />,
+    plusBackground: <PlusBackgroundIcon onClick={onClick} />,
+    flowerSmall: <FlowerIconSmall onClick={onClick} />,
+    letsgo: <LetsGoIcon onClick={onClick} />,
+    division: <DivisionLineIcon onClick={onClick} />,
   };
-  return <div onClick={onClick}>{iconSizeMap[type]}</div>;
+  return <div>{iconSizeMap[type]}</div>;
 };
 
 export default Icons;
