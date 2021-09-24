@@ -7,7 +7,12 @@ function App(): JSX.Element {
     <BrowserRouter>
       <div className={styles.App}>
         <Switch>
-          <Route path="/"></Route>
+          <Route path="/about">
+            <main>About</main>
+          </Route>
+          <Route path="/">
+            <main>Home</main>
+          </Route>
         </Switch>
       </div>
     </BrowserRouter>
