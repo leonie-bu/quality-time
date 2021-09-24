@@ -52,4 +52,12 @@
 
 body {
   margin: 0;
+  background-image: url(./assets/Blumeklein.png),
+    url(./assets/Blumegroß_overlay_oben.png),
+    url(./assets/Blumegroß_overlay_unten.png);
+  background-position: top, left, right;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-color: var(--color-tertiary);
+  overflow: hidden;
 }
