@@ -6,8 +6,10 @@ export default {
   component: Navigation,
 };
 
-export const Calendar = (): JSX.Element => <Navigation activeLink="calendar" />;
+export const Calendar = (): JSX.Element => (
+  <Navigation to="" activeLink="calendar" />
+);
 
 export const Overview = (): JSX.Element => (
-  <Navigation activeLink="overview"></Navigation>
+  <Navigation to="" activeLink="overview" />
 );
