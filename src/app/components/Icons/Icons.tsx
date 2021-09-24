@@ -26,7 +26,7 @@ type IconProps = {
   type: IconType;
   onClick?: () => void;
   className?: string;
-  isClickable: boolean;
+  isClickable?: boolean;
 };
 
 const Icons = ({ type, onClick, isClickable }: IconProps): JSX.Element => {
