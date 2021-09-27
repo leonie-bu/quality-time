@@ -1,5 +1,19 @@
 .container {
-  color: cadetblue;
-  font-size: 3rem;
   background-color: olive;
+  height: 100vh;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  padding-top: 3rem;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+  text-align: center;
+}
+
+.letsgo {
+  align-self: center;
+  padding-top: 0.5rem;
 }
