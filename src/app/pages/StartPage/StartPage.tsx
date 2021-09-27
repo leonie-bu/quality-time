@@ -3,6 +3,7 @@ import FlowerIconSmall from '../../components/assets/FlowerIconSmall';
 import LetsGoIcon from '../../components/assets/LetsGo';
 import Typography from '../../components/Typography/Typography';
 import styles from './StartPage.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Start(): JSX.Element {
   return (
@@ -15,7 +16,9 @@ export default function Start(): JSX.Element {
         <Typography size="l">
           Zeit für Dich, <br /> Zeit für Gutes
         </Typography>
-        <LetsGoIcon className={styles.letsgo} />
+        <Link to="/calendar">
+          <LetsGoIcon className={styles.letsgo} />
+        </Link>
       </div>
     </main>
   );
