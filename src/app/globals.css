@@ -52,12 +52,13 @@
 
 body {
   margin: 0;
-  background-image: url(./assets/Blumeklein.png),
-    url(./assets/Blumegroß_overlay_oben.png),
-    url(./assets/Blumegroß_overlay_unten.png);
-  background-position: top, left, right;
-  background-repeat: no-repeat;
-  background-size: inherit;
-  background-color: var(--color-tertiary);
-  overflow: hidden;
+  background-color: olive;
 }
+
+/* 
+margin: 0;
+--bg-gradient: linear-gradient(
+  191.16deg,
+  rgba(164, 101, 244, 0.7) -41.19%,
+  rgba(251, 111, 111, 0.7) 84.87%
+); */
