@@ -1,7 +1,7 @@
 .container {
   height: 100vh;
-  background-image: url(../../assets/BlumeGroß_oben.png),
-    url(../../assets/BlumeGroß_unten.png);
+  background-image: url(../../assets/FlowerLarge_top.png),
+    url(../../assets/FlowerLarge_bottom.png);
   background-repeat: no-repeat;
   background-position: right 0, left 0 bottom 0;
   overflow: hidden;
