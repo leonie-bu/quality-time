@@ -1,0 +1,23 @@
+.container {
+  height: 100vh;
+  background-image: url(../../assets/FlowerLarge_top.png),
+    url(../../assets/FlowerLarge_bottom.png);
+  background-repeat: no-repeat;
+  background-position: right 0, left 0 bottom 0;
+  overflow: hidden;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  padding-top: 3rem;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+  text-align: center;
+}
+
+.letsgo {
+  align-self: center;
+  padding-top: 0.5rem;
+}
