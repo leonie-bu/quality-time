@@ -1,18 +1,20 @@
 import React from 'react';
+import styles from './App.module.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Start from './pages/StartPage/StartPage';
 
 function App(): JSX.Element {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/calendar">
-          <Start />
-        </Route>
-        <Route path="/">
-          <Start />
-        </Route>
-      </Switch>
+      <div className={styles.App}>
+        <Switch>
+          <Route path="/about">
+            <main>About</main>
+          </Route>
+          <Route path="/">
+            <main>Home</main>
+          </Route>
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }
