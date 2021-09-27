@@ -1,6 +1,11 @@
 .container {
   background-color: olive;
   height: 100vh;
+  background-image: url(../../assets/BlumeGroß_oben.png),
+    url(../../assets/BlumeGroß_unten.png);
+  background-repeat: no-repeat;
+  background-position: right 0, left 0 bottom 0;
+  overflow: hidden;
 }
 
 .content {
