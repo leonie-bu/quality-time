@@ -6,6 +6,9 @@ function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/calendar">
+          <Start />
+        </Route>
         <Route path="/">
           <Start />
         </Route>
