@@ -1,0 +1,7 @@
+.navigation {
+  background: var(--color-primary);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 1rem 0;
+}

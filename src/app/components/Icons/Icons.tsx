@@ -26,25 +26,45 @@ type IconProps = {
   type: IconType;
   onClick?: () => void;
   className?: string;
+  isClickable?: boolean;
 };
 
-const iconSizeMap: {
-  [type in IconType]: JSX.Element;
-} = {
-  calendar: <CalendarIcon />,
-  delete: <DeleteIcon />,
-  done: <DoneIcon />,
-  edit: <EditIcon />,
-  overview: <OverviewIcon />,
-  plus: <PlusIcon />,
-  plusBackground: <PlusBackgroundIcon />,
-  flowerSmall: <FlowerIconSmall />,
-  letsgo: <LetsGoIcon />,
-  division: <DivisionLineIcon />,
-};
+const Icons = ({ type, onClick, isClickable }: IconProps): JSX.Element => {
+  const currentPage = {
+    fill: 'var(--color-secondary)',
+    stroke: 'var(--color-secondary)',
+  };
 
-const Icons = ({ type, onClick }: IconProps): JSX.Element => {
-  return <div onClick={onClick}>{iconSizeMap[type]}</div>;
+  const otherPage = {
+    fill: 'var(--color-action)',
+    stroke: 'var(--color-action)',
+  };
+
+  const iconSizeMap: {
+    [type in IconType]: JSX.Element;
+  } = {
+    calendar: (
+      <CalendarIcon
+        onClick={onClick}
+        {...(isClickable ? currentPage : otherPage)}
+      />
+    ),
+    delete: <DeleteIcon onClick={onClick} />,
+    done: <DoneIcon onClick={onClick} />,
+    edit: <EditIcon onClick={onClick} />,
+    overview: (
+      <OverviewIcon
+        onClick={onClick}
+        {...(isClickable ? currentPage : otherPage)}
+      />
+    ),
+    plus: <PlusIcon onClick={onClick} />,
+    plusBackground: <PlusBackgroundIcon onClick={onClick} />,
+    flowerSmall: <FlowerIconSmall onClick={onClick} />,
+    letsgo: <LetsGoIcon onClick={onClick} />,
+    division: <DivisionLineIcon onClick={onClick} />,
+  };
+  return <div>{iconSizeMap[type]}</div>;
 };
 
 export default Icons;
