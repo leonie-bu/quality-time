@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import styles from './App.module.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App(): JSX.Element {
   return (
