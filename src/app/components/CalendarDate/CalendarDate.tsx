@@ -13,9 +13,7 @@ export default function CalendarDate(): JSX.Element {
         next2Label={null}
         prev2Label={null}
       />
-      <p>
-        <Typography size="m"> {date.toDateString()}</Typography>
-      </p>
+      <Typography size="m"> {date.toDateString()}</Typography>
     </div>
   );
 }
