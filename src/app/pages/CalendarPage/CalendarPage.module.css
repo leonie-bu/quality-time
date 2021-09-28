@@ -8,13 +8,17 @@
 .calendar {
   display: grid;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .textarea {
   display: grid;
-  padding: 2rem;
+  padding-top: 1rem;
   justify-content: center;
   justify-items: center;
   gap: 0.8rem;
+}
+
+.navigation {
+  padding-top: 2rem;
 }
