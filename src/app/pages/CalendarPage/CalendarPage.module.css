@@ -4,3 +4,17 @@
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
+.calendar {
+  display: grid;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.textarea {
+  display: grid;
+  padding: 2rem;
+  justify-content: center;
+  justify-items: center;
+  gap: 0.8rem;
+}
