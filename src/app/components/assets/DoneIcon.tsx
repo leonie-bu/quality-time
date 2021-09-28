@@ -17,9 +17,9 @@ export default function DoneIcon(
         d="M2 14.3117L10.5714 27.1689L32 2.40698"
         fill="none"
         stroke="inherit"
-        stroke-width="4"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

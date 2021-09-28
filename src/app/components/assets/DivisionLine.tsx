@@ -20,8 +20,8 @@ export default function DivisionLineIcon(
         y2="1.50044"
         fill="inherit"
         stroke="inherit"
-        stroke-width="3"
-        stroke-linecap="round"
+        strokeWidth="3"
+        strokeLinecap="round"
       />
     </svg>
   );
