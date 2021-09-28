@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './CalendarPage.module.css';
-import CalendarDate from '../../components/CalendarDate/CalendarDate';
 import PlusBackgroundIcon from '../../components/assets/PlusBackgroundIcon';
+import ReactCalendar from '../../components/Calendar/Calendar';
 
 export default function Calendar(): JSX.Element {
   return (
     <main className={styles.container}>
       <section className={styles.calendar}>
-        <CalendarDate />
+        <ReactCalendar />
       </section>
       <section className={styles.textarea}>
         <PlusBackgroundIcon />
