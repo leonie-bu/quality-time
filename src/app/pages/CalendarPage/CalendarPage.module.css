@@ -1,3 +1,6 @@
 .container {
   height: 100vh;
+  background-image: url(../../assets/Calendar_BackgroundOfTextarea.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
