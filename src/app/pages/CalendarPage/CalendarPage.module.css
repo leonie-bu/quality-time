@@ -1,0 +1,24 @@
+.container {
+  height: 100vh;
+  background-image: url(../../assets/Calendar_BackgroundOfTextarea.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.calendar {
+  display: grid;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.textarea {
+  display: grid;
+  padding-top: 1rem;
+  justify-content: center;
+  justify-items: center;
+  gap: 0.8rem;
+}
+
+.navigation {
+  padding-top: 2rem;
+}

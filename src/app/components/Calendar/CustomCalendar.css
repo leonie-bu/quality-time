@@ -1,8 +1,8 @@
 .react-calendar {
-  width: 310px;
+  width: 330px;
   max-width: 100%;
   border: none;
-  background: var(--bg-gradient);
+  background: transparent;
 }
 
 /* Adapt Nav Bar // Is there a way to overwrite the inline style of the navigation that sets display=flex to grid, other that using !important? */

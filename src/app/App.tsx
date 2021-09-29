@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Calendar from './pages/CalendarPage/CalendarPage';
 import Start from './pages/StartPage/StartPage';
 
 function App(): JSX.Element {
@@ -7,7 +8,7 @@ function App(): JSX.Element {
     <BrowserRouter>
       <Switch>
         <Route path="/calendar">
-          <Start />
+          <Calendar />
         </Route>
         <Route path="/">
           <Start />
