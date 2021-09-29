@@ -3,6 +3,7 @@ import styles from './CalendarPage.module.css';
 import ReactCalendar from '../../components/Calendar/Calendar';
 import Textarea from '../../components/Textarea/Textarea';
 import Navigation from '../../components/Navigation/Navigation';
+import PlusBackgroundIcon from '../../components/assets/PlusBackgroundIcon';
 
 export default function Calendar(): JSX.Element {
   const [date, setDate] = useState(new Date());
@@ -23,6 +24,7 @@ export default function Calendar(): JSX.Element {
           onChange={(event) => setActivity(event.target.value)}
           handleSubmit={() => handleSubmit()}
         />
+        <PlusBackgroundIcon type="submit" />
       </section>
       <Navigation className={styles.navigation} activeLink="calendar" />
     </main>
