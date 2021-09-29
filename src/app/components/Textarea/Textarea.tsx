@@ -1,5 +1,4 @@
 import React from 'react';
-import PlusBackgroundIcon from '../assets/PlusBackgroundIcon';
 import styles from './Textarea.module.css';
 
 type TextareaProps = {
@@ -26,7 +25,6 @@ export default function Textarea({
         value={value}
         onChange={onChange}
       ></textarea>
-      <PlusBackgroundIcon type="submit" />
     </form>
   );
 }
