@@ -59,7 +59,7 @@ const Icons = ({ type, onClick, isClickable }: IconProps): JSX.Element => {
       />
     ),
     plus: <PlusIcon onClick={onClick} />,
-    plusBackground: <PlusBackgroundIcon onClick={onClick} />,
+    plusBackground: <PlusBackgroundIcon type="submit" />,
     flowerSmall: <FlowerIconSmall onClick={onClick} />,
     letsgo: <LetsGoIcon onClick={onClick} />,
     division: <DivisionLineIcon onClick={onClick} />,
