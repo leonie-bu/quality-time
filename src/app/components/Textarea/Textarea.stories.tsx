@@ -7,5 +7,9 @@ export default {
 };
 
 export const Text = (): JSX.Element => (
-  <Textarea handleSubmit={() => console.log('Submitted')} />
+  <Textarea
+    value="Date"
+    onChange={() => console.log('Test')}
+    handleSubmit={() => console.log('Submitted')}
+  />
 );

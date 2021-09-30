@@ -7,4 +7,9 @@ export default {
   component: ReactCalendar,
 };
 
-export const Cal = (): JSX.Element => <ReactCalendar></ReactCalendar>;
+export const Cal = (): JSX.Element => (
+  <ReactCalendar
+    date={new Date()}
+    setDate={() => console.log('Test')}
+  ></ReactCalendar>
+);
