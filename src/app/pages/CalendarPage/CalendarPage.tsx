@@ -4,13 +4,19 @@ import ReactCalendar from '../../components/Calendar/Calendar';
 import Textarea from '../../components/Textarea/Textarea';
 import Navigation from '../../components/Navigation/Navigation';
 import PlusBackgroundIcon from '../../components/assets/PlusBackgroundIcon';
+import useActivityCard from '../../hooks/useCalendar';
 
 export default function Calendar(): JSX.Element {
   const [date, setDate] = useState(new Date());
   const [activity, setActivity] = useState('');
+  const { addActivityCard } = useActivityCard();
 
-  function handleSubmit() {
-    console.log('Hey');
+  function addCard() {
+    const activityCard = {
+      date: date,
+      activity: activity,
+    };
+    addActivityCard(activityCard);
   }
   function handleChange(value: string) {
     setActivity(value);
@@ -18,17 +24,24 @@ export default function Calendar(): JSX.Element {
 
   return (
     <main className={styles.container}>
-      <section className={styles.calendar}>
-        <ReactCalendar setDate={setDate} date={date} />
-      </section>
-      <section className={styles.textarea}>
-        <Textarea
-          value={activity}
-          onChange={handleChange}
-          handleSubmit={() => handleSubmit()}
-        />
-        <PlusBackgroundIcon type="submit" />
-      </section>
+      <form
+        onSubmit={(event) => {
+          event.preventDefault(), addCard();
+        }}
+      >
+        <section className={styles.calendar}>
+          <ReactCalendar setDate={setDate} date={date} />
+        </section>
+        <section className={styles.textarea}>
+          <Textarea
+            value={activity}
+            onChange={(value: string) => handleChange(value)}
+          />
+          <button className={styles.button}>
+            <PlusBackgroundIcon type="submit" />
+          </button>
+        </section>
+      </form>
       <Navigation className={styles.navigation} activeLink="calendar" />
     </main>
   );
