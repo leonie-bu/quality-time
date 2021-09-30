@@ -23,7 +23,6 @@ export default function Textarea({
         maxLength={40}
         value={value}
         onChange={(event) => {
-          event.preventDefault();
           onChange(event.target.value);
         }}
       ></textarea>
