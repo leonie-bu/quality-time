@@ -3,7 +3,7 @@ import styles from './Textarea.module.css';
 
 type TextareaProps = {
   handleSubmit: () => void;
-  onChange: (event: React.ChangeEvent) => void;
+  onChange: (value: string) => void;
   value: string;
   className?: string;
 };
@@ -23,7 +23,7 @@ export default function Textarea({
         className={styles.textarea}
         maxLength={40}
         value={value}
-        onChange={onChange}
+        onChange={(event) => onChange(event.target.value)}
       ></textarea>
     </form>
   );
