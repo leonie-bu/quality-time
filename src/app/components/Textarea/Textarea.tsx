@@ -2,19 +2,18 @@ import React from 'react';
 import styles from './Textarea.module.css';
 
 type TextareaProps = {
-  handleSubmit: () => void;
+  handleSubmit?: (value: string) => void;
   onChange: (value: string) => void;
   value: string;
   className?: string;
 };
 
 export default function Textarea({
-  handleSubmit,
   onChange,
   value,
 }: TextareaProps): JSX.Element {
   return (
-    <form onSubmit={handleSubmit}>
+    <div>
       <textarea
         name="activity"
         rows={3}
@@ -23,8 +22,11 @@ export default function Textarea({
         className={styles.textarea}
         maxLength={40}
         value={value}
-        onChange={(event) => onChange(event.target.value)}
+        onChange={(event) => {
+          event.preventDefault();
+          onChange(event.target.value);
+        }}
       ></textarea>
-    </form>
+    </div>
   );
 }
