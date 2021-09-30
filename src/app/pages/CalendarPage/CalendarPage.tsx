@@ -12,6 +12,9 @@ export default function Calendar(): JSX.Element {
   function handleSubmit() {
     console.log('Hey');
   }
+  function handleChange(value: string) {
+    setActivity(value);
+  }
 
   return (
     <main className={styles.container}>
@@ -21,7 +24,7 @@ export default function Calendar(): JSX.Element {
       <section className={styles.textarea}>
         <Textarea
           value={activity}
-          onChange={(event) => setActivity(event.target.value)}
+          onChange={handleChange}
           handleSubmit={() => handleSubmit()}
         />
         <PlusBackgroundIcon type="submit" />
