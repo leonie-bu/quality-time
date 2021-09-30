@@ -8,16 +8,23 @@ export default function ReactCalendar(): JSX.Element {
   };
 } */
 
-import React, { useState } from 'react';
+import React from 'react';
 import Calendar from 'react-calendar';
+import type { DateCallback } from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './CustomCalendar.css';
 import Typography from '../Typography/Typography';
 import styles from './Calendar.module.css';
 
-export default function ReactCalendar(): JSX.Element {
-  const [date, setDate] = useState(new Date());
+type CalendarProps = {
+  setDate: DateCallback;
+  date: Date;
+};
 
+export default function ReactCalendar({
+  setDate,
+  date,
+}: CalendarProps): JSX.Element {
   return (
     <div className={styles.container}>
       <Calendar
