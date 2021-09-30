@@ -10,6 +10,8 @@ export type ActiveActivityProps = {
   onClickEdit: () => void;
   onClickDelete: () => void;
   handleSubmit: () => void;
+  onChange: (value: string) => void;
+  value: string;
 };
 
 function ActiveActivity({
@@ -18,12 +20,18 @@ function ActiveActivity({
   onClickEdit,
   onClickDelete,
   handleSubmit,
+  onChange,
+  value,
 }: ActiveActivityProps): JSX.Element {
   return (
     <section className={styles.container}>
       <Typography size="m">{header}</Typography>
       <div className={styles.textarea}>
-        <Textarea handleSubmit={handleSubmit}></Textarea>
+        <Textarea
+          handleSubmit={handleSubmit}
+          onChange={onChange}
+          value={value}
+        ></Textarea>
       </div>
       <div className={styles.icons}>
         <Icons type="done" onClick={onClickDone}></Icons>
