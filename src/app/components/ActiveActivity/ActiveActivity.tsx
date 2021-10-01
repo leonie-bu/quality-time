@@ -5,7 +5,7 @@ import Typography from '../Typography/Typography';
 import styles from './ActiveActivity.module.css';
 
 export type ActiveActivityProps = {
-  date: string;
+  date: Date;
   onClickDone: () => void;
   onClickEdit: () => void;
   onClickDelete: () => void;

@@ -8,7 +8,7 @@ export default {
 
 export const ActiveCard = (): JSX.Element => (
   <ActiveActivity
-    date="21.September"
+    date={new Date()}
     onClickDone={() => console.log('Done')}
     onClickEdit={() => console.log('Edit')}
     onClickDelete={() => console.log('Delete')}
