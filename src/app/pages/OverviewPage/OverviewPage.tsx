@@ -27,13 +27,13 @@ export default function Overview(): JSX.Element {
       <section>
         {activityCards.map((activityCard) => (
           <ActiveActivity
-            date={activityCards.date}
+            date={activityCard.date}
             onClickDone={() => handleonClickDone}
             onClickEdit={() => handleonClickEdit}
             onClickDelete={() => handleonClickDelete}
             handleSubmit={}
             onChange={}
-            value={activityCards.activity}
+            value={activityCard.activity}
           />
         ))}
         ;
