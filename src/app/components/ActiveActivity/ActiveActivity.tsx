@@ -25,7 +25,7 @@ function ActiveActivity({
 }: ActiveActivityProps): JSX.Element {
   return (
     <section className={styles.container}>
-      <Typography size="m">{date}</Typography>
+      <Typography size="m">{date.toDateString}</Typography>
       <div className={styles.textarea}>
         <Textarea
           handleSubmit={handleSubmit}
