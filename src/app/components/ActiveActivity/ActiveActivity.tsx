@@ -5,7 +5,7 @@ import Typography from '../Typography/Typography';
 import styles from './ActiveActivity.module.css';
 
 export type ActiveActivityProps = {
-  header: string;
+  date: string;
   onClickDone: () => void;
   onClickEdit: () => void;
   onClickDelete: () => void;
@@ -15,7 +15,7 @@ export type ActiveActivityProps = {
 };
 
 function ActiveActivity({
-  header,
+  date,
   onClickDone,
   onClickEdit,
   onClickDelete,
@@ -25,7 +25,7 @@ function ActiveActivity({
 }: ActiveActivityProps): JSX.Element {
   return (
     <section className={styles.container}>
-      <Typography size="m">{header}</Typography>
+      <Typography size="m">{date}</Typography>
       <div className={styles.textarea}>
         <Textarea
           handleSubmit={handleSubmit}
