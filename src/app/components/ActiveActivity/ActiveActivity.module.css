@@ -1,6 +1,7 @@
 .container {
   background-color: var(--color-primary);
   width: 23.75rem;
+  border-radius: 0.5rem;
 }
 
 .textarea {
@@ -12,4 +13,5 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+  padding-bottom: 1rem;
 }

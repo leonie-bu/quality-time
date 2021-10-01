@@ -38,7 +38,6 @@ function ActiveActivity({
         <Icons type="edit" onClick={onClickEdit}></Icons>
         <Icons type="delete" onClick={onClickDelete}></Icons>
       </div>
-      <Icons type="division"></Icons>
     </section>
   );
 }
