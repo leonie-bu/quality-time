@@ -5,27 +5,27 @@ import Typography from '../Typography/Typography';
 import styles from './ActiveActivity.module.css';
 
 export type ActiveActivityProps = {
-  date: Date;
   onClickDone: () => void;
   onClickEdit: () => void;
   onClickDelete: () => void;
   handleSubmit: () => void;
   onChange: (value: string) => void;
   value: string;
+  date: string;
 };
 
 function ActiveActivity({
-  date,
   onClickDone,
   onClickEdit,
   onClickDelete,
   handleSubmit,
   onChange,
   value,
+  date,
 }: ActiveActivityProps): JSX.Element {
   return (
     <section className={styles.container}>
-      <Typography size="m">{date.toDateString}</Typography>
+      <Typography size="m">{date}</Typography>
       <div className={styles.textarea}>
         <Textarea
           handleSubmit={handleSubmit}

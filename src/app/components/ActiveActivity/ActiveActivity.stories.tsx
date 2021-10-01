@@ -8,12 +8,12 @@ export default {
 
 export const ActiveCard = (): JSX.Element => (
   <ActiveActivity
-    date={new Date()}
     onClickDone={() => console.log('Done')}
     onClickEdit={() => console.log('Edit')}
     onClickDelete={() => console.log('Delete')}
     handleSubmit={() => console.log('Submit')}
     onChange={() => console.log('Submit')}
-    value="date"
+    value="Platzhalter"
+    date="Datum"
   ></ActiveActivity>
 );
