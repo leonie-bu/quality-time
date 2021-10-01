@@ -1,5 +1,6 @@
 import React from 'react';
 import ActiveActivity from '../../components/ActiveActivity/ActiveActivity';
+import Navigation from '../../components/Navigation/Navigation';
 import Typography from '../../components/Typography/Typography';
 import useActivityCard from '../../hooks/useCalendar';
 import type { ActivityCards } from '../../types';
@@ -22,22 +23,22 @@ export default function Overview(): JSX.Element {
   }
 
   return (
-    <main>
+    <main className={styles.container}>
       <Typography size="l">Übersicht</Typography>
-      <section>
+      <section className={styles.activity}>
         {activityCards.map((activityCard) => (
           <ActiveActivity
             date={activityCard.date}
             onClickDone={() => handleonClickDone}
             onClickEdit={() => handleonClickEdit}
             onClickDelete={() => handleonClickDelete}
-            handleSubmit={}
-            onChange={}
+            handleSubmit={() => handleonClickDelete}
+            onChange={() => handleonClickDelete}
             value={activityCard.activity}
           />
         ))}
-        ;
       </section>
+      <Navigation activeLink="overview" />
     </main>
   );
 }
