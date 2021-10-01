@@ -7,8 +7,7 @@ import type { ActivityCards } from '../../types';
 import styles from './OverviewPage.module.css';
 
 export default function Overview(): JSX.Element {
-  const { activityCards }: { activityCards: ActivityCards[] } =
-    useActivityCard();
+  const { activityCards, removeActivityCard } = useActivityCard();
 
   function handleonClickDone() {
     console.log('done');
@@ -18,8 +17,8 @@ export default function Overview(): JSX.Element {
     console.log('edit');
   }
 
-  function handleonClickDelete() {
-    console.log('delete');
+  function handleonClickDelete(activityCard: ActivityCards) {
+    removeActivityCard(activityCard);
   }
 
   return (
@@ -31,7 +30,7 @@ export default function Overview(): JSX.Element {
             date={activityCard.date}
             onClickDone={() => handleonClickDone}
             onClickEdit={() => handleonClickEdit}
-            onClickDelete={() => handleonClickDelete}
+            onClickDelete={() => handleonClickDelete(activityCard)}
             handleSubmit={() => handleonClickDelete}
             onChange={() => handleonClickDelete}
             value={activityCard.activity}
