@@ -13,7 +13,7 @@ export default function Calendar(): JSX.Element {
 
   function addCard() {
     const activityCard = {
-      date: date,
+      date: date.toDateString(),
       activity: activity,
     };
     addActivityCard(activityCard);

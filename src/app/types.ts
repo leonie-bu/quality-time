@@ -1,4 +1,4 @@
 export type ActivityCards = {
-  date: Date;
+  date: string;
   activity: string;
 };

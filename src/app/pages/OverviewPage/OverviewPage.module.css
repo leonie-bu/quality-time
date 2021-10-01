@@ -1,0 +1,5 @@
+.activity {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}

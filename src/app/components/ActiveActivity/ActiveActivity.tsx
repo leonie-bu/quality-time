@@ -5,27 +5,27 @@ import Typography from '../Typography/Typography';
 import styles from './ActiveActivity.module.css';
 
 export type ActiveActivityProps = {
-  header: string;
   onClickDone: () => void;
   onClickEdit: () => void;
   onClickDelete: () => void;
   handleSubmit: () => void;
   onChange: (value: string) => void;
   value: string;
+  date: string;
 };
 
 function ActiveActivity({
-  header,
   onClickDone,
   onClickEdit,
   onClickDelete,
   handleSubmit,
   onChange,
   value,
+  date,
 }: ActiveActivityProps): JSX.Element {
   return (
     <section className={styles.container}>
-      <Typography size="m">{header}</Typography>
+      <Typography size="m">{date}</Typography>
       <div className={styles.textarea}>
         <Textarea
           handleSubmit={handleSubmit}
@@ -38,7 +38,6 @@ function ActiveActivity({
         <Icons type="edit" onClick={onClickEdit}></Icons>
         <Icons type="delete" onClick={onClickDelete}></Icons>
       </div>
-      <Icons type="division"></Icons>
     </section>
   );
 }
