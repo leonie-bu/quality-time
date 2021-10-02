@@ -22,12 +22,12 @@ function Navigation({ activeLink, className }: NavigationProps): JSX.Element {
 
   return (
     <nav className={`${styles.navigation} ${className}`}>
-      <Link to="">
+      <Link to="calendar">
         <CalendarIcon
           {...(activeLink === 'calendar' ? currentPage : otherPage)}
         />
       </Link>
-      <Link to="">
+      <Link to="overview">
         <OverviewIcon
           {...(activeLink === 'overview' ? currentPage : otherPage)}
         />

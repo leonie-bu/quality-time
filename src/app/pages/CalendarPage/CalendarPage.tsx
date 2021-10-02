@@ -15,6 +15,7 @@ export default function Calendar(): JSX.Element {
     const activityCard = {
       date: date.toDateString(),
       activity: activity,
+      status: 'active',
     };
     addActivityCard(activityCard);
   }
