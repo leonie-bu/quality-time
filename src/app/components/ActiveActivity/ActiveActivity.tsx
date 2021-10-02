@@ -5,6 +5,7 @@ import Typography from '../Typography/Typography';
 import styles from './ActiveActivity.module.css';
 
 export type ActiveActivityProps = {
+  type: 'active';
   onClickDone: () => void;
   onClickEdit: () => void;
   onClickDelete: () => void;
@@ -15,6 +16,7 @@ export type ActiveActivityProps = {
 };
 
 function ActiveActivity({
+  type = 'active',
   onClickDone,
   onClickEdit,
   onClickDelete,
@@ -24,7 +26,7 @@ function ActiveActivity({
   date,
 }: ActiveActivityProps): JSX.Element {
   return (
-    <section className={styles.container}>
+    <section className={`${type === 'active' && styles.container}`}>
       <Typography size="m">{date}</Typography>
       <div className={styles.textarea}>
         <Textarea
@@ -43,3 +45,6 @@ function ActiveActivity({
 }
 
 export default ActiveActivity;
+
+// className={`${styles.container}
+//       ${type === 'active' && styles.cardActive}`}
