@@ -7,5 +7,9 @@ export default {
 };
 
 export const DoneCard = (): JSX.Element => (
-  <DoneActivity header="23. September"></DoneActivity>
+  <DoneActivity
+    date="Datum"
+    type="done"
+    onClickDelete={() => console.log('Delete')}
+  ></DoneActivity>
 );
