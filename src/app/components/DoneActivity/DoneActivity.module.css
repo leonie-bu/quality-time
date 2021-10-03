@@ -1,9 +1,15 @@
 .container {
-  background-color: var(--color-primary);
-  width: 23.75rem;
+  background-color: transparent;
+  width: 20rem;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.headerDoneCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .donemessage {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }

@@ -16,12 +16,13 @@ function DoneActivity({
 }: DoneActivityProps): JSX.Element {
   return (
     <section className={`${type === 'done' && styles.container}`}>
-      <Typography size="m">{date}</Typography>
-      <Icons type="delete" onClick={onClickDelete}></Icons>
+      <div className={styles.headerDoneCard}>
+        <Typography size="m">{date}</Typography>
+        <Icons type="delete" onClick={onClickDelete}></Icons>
+      </div>
       <div className={styles.donemessage}>
         <Typography size="mm">Wunderbar ⭐</Typography>
       </div>
-      <Icons type="division"></Icons>
     </section>
   );
 }
