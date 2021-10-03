@@ -1,13 +1,12 @@
 .textarea {
   width: 310px;
   max-width: 100%;
-  height: 130px;
   resize: none;
   background: repeating-linear-gradient(
     #f9f2ff,
     #f9f2ff 40px,
-    #f29a9a 40px,
-    #f29a9a 41.5px
+    #f29a9a 42px,
+    #f9f2ff 44px
   );
   line-height: 42px;
   color: var(--color-secondary);
