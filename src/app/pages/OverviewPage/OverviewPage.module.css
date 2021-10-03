@@ -1,5 +1,25 @@
-.activity {
+.container {
+  background: var(--color-primary);
+  height: 100vh;
+  background-image: url(../../assets/FlowerLarge_top2.png),
+    url(../../assets/FlowerLarge_bottom2.png),
+    url(../../assets/FlowerLarge_left.png),
+    url(../../assets/FlowerLarge_right.png);
+  background-repeat: no-repeat;
+  background-position: right 0, left 0 bottom 0, left 0 top 5rem,
+    right 0 top 20rem;
+  overflow: scroll;
+}
+
+.cards {
   display: grid;
   justify-content: center;
-  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
 }
