@@ -1,17 +1,16 @@
 .container {
-  background-color: var(--color-primary);
-  width: 23.75rem;
+  background-color: transparent;
+  width: 20rem;
   border-radius: 0.5rem;
+}
+
+.headerActiveCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .textarea {
   display: grid;
   justify-content: center;
-}
-
-.icons {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  padding-bottom: 1rem;
 }

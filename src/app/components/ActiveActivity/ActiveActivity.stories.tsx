@@ -10,8 +10,6 @@ export const ActiveCard = (): JSX.Element => (
   <ActiveActivity
     type="active"
     onClickDone={() => console.log('Done')}
-    onClickEdit={() => console.log('Edit')}
-    onClickDelete={() => console.log('Delete')}
     handleSubmit={() => console.log('Submit')}
     onChange={() => console.log('Submit')}
     value="Platzhalter"
