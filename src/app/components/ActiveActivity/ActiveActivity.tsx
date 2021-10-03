@@ -1,4 +1,5 @@
 import React from 'react';
+import DivisionLineIcon from '../assets/DivisionLine';
 import Icons from '../Icons/Icons';
 import Textarea from '../Textarea/Textarea';
 import Typography from '../Typography/Typography';
