@@ -5,8 +5,8 @@ export default function DoneIcon(
 ): JSX.Element {
   return (
     <svg
-      width="34"
-      height="30"
+      width="28"
+      height="24"
       viewBox="0 0 34 30"
       fill="none"
       stroke="var(--color-action)"
