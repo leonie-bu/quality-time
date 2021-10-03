@@ -5,8 +5,8 @@ export default function LetsGoIcon(
 ): JSX.Element {
   return (
     <svg
-      width="80"
-      height="80"
+      width="60"
+      height="60"
       viewBox="0 0 80 80"
       fill="var(--color-primary)"
       stroke="none"
