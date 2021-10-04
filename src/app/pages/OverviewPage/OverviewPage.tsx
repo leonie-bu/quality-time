@@ -2,7 +2,6 @@ import React from 'react';
 import ActiveActivity from '../../components/ActiveActivity/ActiveActivity';
 import DoneActivity from '../../components/DoneActivity/DoneActivity';
 import Navigation from '../../components/Navigation/Navigation';
-import Typography from '../../components/Typography/Typography';
 import useActivityCard from '../../hooks/useCalendar';
 import type { ActivityCards } from '../../types';
 import styles from './OverviewPage.module.css';
@@ -10,10 +9,6 @@ import styles from './OverviewPage.module.css';
 export default function Overview(): JSX.Element {
   const { activityCards, removeActivityCard, doneActivityCard } =
     useActivityCard();
-
-  function handleonClickEdit() {
-    console.log('edit');
-  }
 
   function handleonClickDelete(activityCard: ActivityCards) {
     removeActivityCard(activityCard);
@@ -25,8 +20,7 @@ export default function Overview(): JSX.Element {
 
   return (
     <main className={styles.container}>
-      <Typography size="l">Übersicht</Typography>
-      <section className={styles.activity}>
+      <section className={styles.cards}>
         {activityCards.map((activityCard) => {
           switch (activityCard.status) {
             case 'active':
@@ -37,8 +31,6 @@ export default function Overview(): JSX.Element {
                   type="active"
                   date={activityCard.date}
                   onClickDone={() => handleonClickDone(activityCard)}
-                  onClickEdit={() => handleonClickEdit}
-                  onClickDelete={() => handleonClickDelete(activityCard)}
                   handleSubmit={() => console.log('Test')}
                   onChange={() => console.log('Test')}
                   value={activityCard.activity}
@@ -56,7 +48,7 @@ export default function Overview(): JSX.Element {
           }
         })}
       </section>
-      <Navigation activeLink="overview" />
+      <Navigation className={styles.navigation} activeLink="overview" />
     </main>
   );
 }

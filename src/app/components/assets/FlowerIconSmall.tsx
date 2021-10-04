@@ -5,8 +5,8 @@ export default function FlowerIconSmall(
 ): JSX.Element {
   return (
     <svg
-      width="126"
-      height="126"
+      width="100"
+      height="100"
       viewBox="0 0 126 126"
       fill="none"
       stroke="var(--flower)"

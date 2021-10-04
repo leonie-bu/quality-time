@@ -16,7 +16,7 @@ export default function Textarea({
     <div>
       <textarea
         name="activity"
-        rows={3}
+        rows={2}
         cols={20}
         placeholder="Mach was Schönes"
         className={styles.textarea}
