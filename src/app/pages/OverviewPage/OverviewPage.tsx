@@ -10,11 +10,11 @@ export default function Overview(): JSX.Element {
   const { activityCards, removeActivityCard, doneActivityCard } =
     useActivityCard();
 
-  function handleonClickDelete(activityCard: ActivityCards) {
+  function handleOnClickDelete(activityCard: ActivityCards) {
     removeActivityCard(activityCard);
   }
 
-  function handleonClickDone(activityCard: ActivityCards) {
+  function handleOnClickDone(activityCard: ActivityCards) {
     doneActivityCard({ ...activityCard, status: 'done' });
   }
 
@@ -24,13 +24,12 @@ export default function Overview(): JSX.Element {
         {activityCards.map((activityCard) => {
           switch (activityCard.status) {
             case 'active':
-            case undefined:
               return (
                 <ActiveActivity
                   key={activityCard.date}
                   type="active"
                   date={activityCard.date}
-                  onClickDone={() => handleonClickDone(activityCard)}
+                  onClickDone={() => handleOnClickDone(activityCard)}
                   handleSubmit={() => console.log('Test')}
                   onChange={() => console.log('Test')}
                   value={activityCard.activity}
@@ -42,7 +41,19 @@ export default function Overview(): JSX.Element {
                   key={activityCard.date}
                   date={activityCard.date}
                   type="done"
-                  onClickDelete={() => handleonClickDelete(activityCard)}
+                  onClickDelete={() => handleOnClickDelete(activityCard)}
+                />
+              );
+            default:
+              return (
+                <ActiveActivity
+                  key={activityCard.date}
+                  type="active"
+                  date={activityCard.date}
+                  onClickDone={() => handleOnClickDone(activityCard)}
+                  handleSubmit={() => console.log('Test')}
+                  onChange={() => console.log('Test')}
+                  value={activityCard.activity}
                 />
               );
           }
