@@ -18,6 +18,7 @@ export default function Calendar(): JSX.Element {
       status: 'active',
     };
     addActivityCard(activityCard);
+    setActivity('');
   }
   function handleChange(value: string) {
     setActivity(value);
@@ -47,3 +48,6 @@ export default function Calendar(): JSX.Element {
     </main>
   );
 }
+
+// onChange={(event) => {
+//   onChange(event.target.value);
